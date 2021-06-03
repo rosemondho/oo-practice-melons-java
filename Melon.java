@@ -22,5 +22,8 @@ public class Melon {
 		this.harvester = harvester;
 	}
 
+	public boolean isSellable() {
+		return (this.shapeRating > 5 && this.colorRating > 5 && this.field != 3);
+	  }
 }
 
